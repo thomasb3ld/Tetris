@@ -1,0 +1,95 @@
+@font-face {
+    font-family: headfont;
+    src: url('p2p.ttf');
+}
+
+body {
+    margin: 4% 4% auto;
+    background-color: white;
+    color: burlywood;
+    align-items: center;
+}
+
+.bordered-text {
+    -webkit-text-stroke: 2px black;
+}
+  
+
+.top_head{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background-image: url('tetris_banner.png');
+    background-size: cover;
+    background-position: center;
+    border: 4px solid lightslategray;
+    border-radius: 10px;
+    width: 900px; 
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    opacity: 1;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, orange, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+.score_display {
+    display: flex;
+    justify-content: first baseline;
+    align-items: first baseline;
+    width: 600px;
+    height: 125px;
+    margin: auto;
+}
+
+#scoreCanvas {
+    width: 400px;
+    height: 100px;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas{
+    align-self: flex-start;
+    text-align: center;
+    position: relative;
+    margin: 0px 20px;
+    margin-top: 0px; 
+}
+
+
+#nextShapeCanvas{
+    align-self: flex-start;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 0px; 
+}
+
+#scoreCanvas{
+    position: relative;
+}
